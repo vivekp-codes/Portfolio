@@ -1,0 +1,84 @@
+/* Mobile Floating Navbar (iPhone style) */
+
+.navbar {
+  position: fixed;
+  bottom: 15px;
+  left: 12px;
+  right: 12px;
+
+  width: auto;
+  padding: 6px 10px;
+
+  background: rgba(30, 30, 30, 0.6);
+  backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+
+  box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+
+  z-index: 100;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: space-between; /* spread items */
+  align-items: center;
+  flex-wrap: nowrap; /* prevent second row */
+  width: 100%;
+}
+
+.navbar-item {
+  flex: 1;              /* equal space for each item */
+  text-align: center;
+}
+
+.navbar-link {
+  color: var(--light-gray);
+  font-size: 12px;
+  padding: 10px 0;
+  width: 100%;
+  transition: var(--transition-1);
+}
+
+.navbar-link.active {
+  color: var(--accent-color);
+}
+
+.navbar-link:hover {
+  color: var(--accent-color);
+}
+
+/* Desktop */
+
+@media (min-width: 1024px) {
+
+  .navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: auto;
+
+    width: max-content;
+    padding: 0 20px;
+
+    border-radius: 0 20px;
+    backdrop-filter: none;
+  }
+
+  .navbar-list {
+    gap: 30px;
+    flex-wrap: nowrap;
+  }
+
+  .navbar-item {
+    flex: none;
+  }
+
+  .navbar-link {
+    padding: 30px 10px;
+    font-size: var(--fs-6);
+  }
+
+}

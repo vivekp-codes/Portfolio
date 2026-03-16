@@ -1,0 +1,156 @@
+/* Academic Projects / Blog Page */
+
+.blog {
+  padding: 30px;
+}
+
+/* Grid layout */
+
+.blog .blog-posts-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+/* Blog card */
+
+.blog .blog-post-item > a {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  height: 100%;
+  box-shadow: var(--shadow-2);
+  border-radius: 16px;
+  display: block;
+  z-index: 1;
+}
+
+.blog .blog-post-item > a::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--eerie-black-1);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+/* Image */
+
+.blog .blog-banner-box {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.blog .blog-banner-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-1);
+}
+
+/* Hover zoom */
+
+.blog .blog-post-item > a:hover .blog-banner-box img {
+  transform: scale(1.1);
+}
+
+/* Content */
+
+.blog .blog-content {
+  padding: 15px;
+}
+
+/* Meta info */
+
+.blog .blog-meta {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 10px;
+}
+
+.blog .blog-meta .blog-category,
+.blog .blog-meta time {
+  color: var(--light-gray-70);
+  font-size: var(--fs-6);
+ 
+}
+
+.blog .blog-meta .dot {
+  background: var(--light-gray-70);
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+}
+
+/* Title */
+
+.blog .blog-item-title {
+  margin-bottom: 10px;
+  line-height: 1.3;
+  transition: var(--transition-1);
+}
+
+.blog .blog-post-item > a:hover .blog-item-title {
+  color: var(--accent-color);
+}
+
+/* Text */
+
+.blog .blog-text {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  line-height: 1.6;
+  text-align: start;
+}
+
+/* Responsive */
+
+@media (min-width: 580px) {
+  .blog .blog-posts-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.blog header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.blog .article-title {
+  text-align: left;
+}
+
+/* Technology Stack */
+
+.tech-stack{
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech{
+  background: var(--jet);
+  color: var(--accent-color);
+  font-size: var(--fs-7);
+  padding: 4px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--jet);
+  transition: var(--transition-1);
+}
+
+.tech:hover{
+  background: var(--accent-color);
+  color: var(--eerie-black-1);
+}
+
+.tech-title {
+  margin-bottom: 10px;
+  line-height: 1.3;
+  transition: var(--transition-1);
+  margin-top: 10px;
+  color: var(--white-2);
+}

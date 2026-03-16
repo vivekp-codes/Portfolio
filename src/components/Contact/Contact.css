@@ -1,0 +1,255 @@
+/* Contact Page */
+
+.contact{
+  padding: 30px;
+}
+
+.article-title{
+    text-align: start;
+}
+/* Map */
+
+.contact .mapbox {
+  width: 100%;
+  height: 250px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  border: 1px solid var(--jet);
+  overflow: hidden;
+}
+
+.contact .mapbox figure {
+  height: 100%;
+}
+
+.contact .mapbox iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  filter: grayscale(1) invert(1);
+}
+
+/* Contact Form */
+
+.contact .contact-form {
+  margin-bottom: 10px;
+}
+
+.contact .form-title {
+  margin-bottom: 20px;
+}
+
+.contact .input-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+/* Inputs */
+
+.contact .form-input {
+  width: 100%;
+  color: var(--white-1);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-400);
+  padding: 13px 20px;
+  border: 1px solid var(--jet);
+  border-radius: 14px;
+  outline: none;
+  background: transparent;
+}
+
+.contact .form-input::placeholder{
+  font-weight: var(--fw-500);
+  color: var(--light-gray-70);
+}
+
+.contact .form-input:focus{
+  border-color: var(--accent-color);
+}
+
+/* Textarea */
+
+.contact textarea.form-input{
+  min-height: 100px;
+  height: 120px;
+  max-height: 200px;
+  resize: vertical;
+  margin-bottom: 25px;
+}
+
+/* Button */
+
+.contact .form-btn{
+  position: relative;
+  width: 100%;
+  background: var(--border-gradient-onyx);
+  color: var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 20px;
+  border-radius: 14px;
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+  text-transform: capitalize;
+  box-shadow: var(--shadow-3);
+  transition: var(--transition-1);
+  z-index: 1;
+}
+
+.contact .form-btn::before{
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.contact .form-btn:hover{
+  background: var(--bg-gradient-yellow-1);
+}
+
+.contact .form-btn:hover::before{
+  background: var(--bg-gradient-yellow-2);
+}
+
+.contact .form-btn:disabled{
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+
+@media (min-width:580px){
+
+  .contact .input-wrapper{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact .form-btn{
+    width: max-content;
+    margin-left: auto;
+  }
+
+}
+
+/* Placeholder styling */
+.contact .form-input::placeholder{
+  color: var(--light-gray-70);
+  font-size: var(--fs-6);
+  font-family: var(--ff-poppins);
+}
+
+/* Remove textarea corner icon */
+.contact textarea.form-input{
+  resize: none;
+}
+
+/* Input text style */
+
+.contact .form-input{
+  color: var(--white-1);
+  font-size: var(--fs-6);
+  font-family: var(--ff-poppins);
+  font-weight: var(--fw-400);
+  background: transparent;
+}
+
+/* SOCIAL MARQUEE */
+
+.social-marquee{
+  margin-bottom:40px;
+  overflow:hidden;
+}
+
+.marquee-row{
+  overflow:hidden;
+  margin-bottom:25px;
+}
+
+/* track */
+
+.marquee-track{
+  display:flex;
+  align-items:center;
+  gap:0px; /* no gap */
+  width:max-content;
+  animation: scrollLeft 18s linear infinite;
+}
+
+/* icon style */
+
+.marquee-track img{
+  width:70px;
+  height:70px;
+  object-fit:contain;
+  margin-right:10px;   /* remove gap */
+  opacity:0.85;
+  transition:0.3s;
+}
+
+.marquee-track img:hover{
+  transform:scale(.15);
+  opacity:1;
+}
+
+/* animation */
+
+@keyframes scrollLeft{
+
+  from{
+    transform:translateX(0);
+  }
+
+  to{
+    transform:translateX(-50%);
+  }
+
+}
+
+.marquee-row:nth-child(1) .marquee-track{
+  animation-duration:18s;
+}
+
+.marquee-row:nth-child(2) .marquee-track{
+  animation-duration:22s;
+}
+
+.marquee-row:nth-child(3) .marquee-track{
+  animation-duration:20s;
+}
+
+.marquee-track:hover{
+  animation-play-state: paused;
+}
+
+.social-marquee{
+  position:relative;
+  margin-bottom:40px;
+  overflow:hidden;
+}
+
+.social-marquee::before,
+.social-marquee::after{
+  content:"";
+  position:absolute;
+  top:0;
+  width:80px;
+  height:100%;
+  z-index:2;
+}
+
+.social-marquee::before{
+  left:0;
+  background:linear-gradient(to right,#0f172a,transparent);
+}
+
+.social-marquee::after{
+  right:0;
+  background:linear-gradient(to left,#0f172a,transparent);
+}
+
