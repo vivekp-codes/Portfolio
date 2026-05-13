@@ -98,24 +98,28 @@ const Portfolio = () => {
             <p>{selectedProject.description}</p>
 
             <div className="modal-buttons">
-              <a
-                href={selectedProject.github}
-                target="_blank"
-                rel="noreferrer"
-                className="btn"
-              >
-                Source Code
-              </a>
+  <a
+    href={selectedProject.github}
+    target="_blank"
+    rel="noreferrer"
+    className="btn"
+  >
+    Source Code
+  </a>
 
-              <a
-                href={selectedProject.demo}
-                target="_blank"
-                rel="noreferrer"
-                className="btn demo"
-              >
-                Live Demo
-              </a>
-            </div>
+  {/* Hide Live Demo for first two projects */}
+  {selectedProject.title !== "Book My Ticket" &&
+    selectedProject.title !== "Readify" && (
+      <a
+        href={selectedProject.demo}
+        target="_blank"
+        rel="noreferrer"
+        className="btn demo"
+      >
+        Live Demo
+      </a>
+    )}
+</div>
 
           </div>
         </div>
