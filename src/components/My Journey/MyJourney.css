@@ -55,8 +55,9 @@
 }
 
 /* Apply hover only to Experience section */
-.resume .timeline:nth-of-type(2) .timeline-item {
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+.resume .timeline:nth-of-type(2) .timeline-item:hover {
+    transform: none !important;
+    box-shadow: none !important;
 }
 
 .resume .timeline:nth-of-type(2) .timeline-item:hover {
