@@ -63,11 +63,18 @@ const Resume = () => {
         <ol className="timeline-list">
           <li className="timeline-item">
             <h4 className="h4 timeline-item-title">MERN Stack Developer – Techmindz , Kochi</h4>
-            <span>2025 — 2026</span>
+            <span>Sep 2025 — Apr 2026</span>
             <p className="timeline-text">
               Completed MERN Stack development training and built full stack web applications using
               MongoDB, Express.js, React, and Node.js. Developed two projects with responsive UI
               using Tailwind CSS. Experienced in Git and GitHub for version control and collaborative development.
+            </p>
+          </li>
+          <li className="timeline-item">
+            <h4 className="h4 timeline-item-title">AI/ML Intern – CuraNova Global Med LLP, Malappuram</h4>
+            <span>June 2026 – Present</span>
+            <p className="timeline-text">
+              Selected as an AI/ML Intern in the Artificial Intelligence and Machine Learning department at CuraNova Global Med LLP. Working in a full-time, work-from-office role focused on supporting AI-driven projects and learning core machine learning concepts, model development, and implementation. Gaining hands-on experience with real-world AI applications, data processing, and collaborative development within a professional team environment.
             </p>
           </li>
         </ol>
