@@ -68,7 +68,7 @@ const Contact = () => {
             <img src="/Images/Postman.png" alt="firebase" />
             <img src="/Images/python.png" alt="html" />
             <img src="/Images/social.png" alt="css" />
-            
+            <img src="/Images/Supabase.png" alt="css" />
             <img src="/Images/whatsapp.png" alt="vscode" />
 
             <img src="/Images/cursor.png" alt="react" />
@@ -93,6 +93,7 @@ const Contact = () => {
             <img src="/Images/flutter.png" alt="tailwind" />
             <img src="/Images/google.png" alt="git" />
             <img src="/Images/html-new.png" alt="javascript" />
+            <img src="/Images/Supabase.png" alt="css" />
 
             <img src="/Images/facebook.png" alt="github" />
             <img src="/Images/android.png" alt="linkedin" />
@@ -142,6 +143,7 @@ const Contact = () => {
             <img src="/Images/chrome.png" alt="mongo" />
             <img src="/Images/flutter.png" alt="tailwind" />
             <img src="/Images/google.png" alt="git" />
+            <img src="/Images/Supabase.png" alt="css" />
             <img src="/Images/Claude-ai.png" alt="discord" />
             <img src="/Images/html-new.png" alt="javascript" />
 
