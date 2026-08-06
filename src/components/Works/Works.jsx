@@ -13,6 +13,15 @@ const projects = [
     demo: "https://project-book-my-ticket.vercel.app/",
   },
   {
+    title: "TypeX",
+    image: "/Images/TX.png",
+    description:
+      "A full-stack typing test web application that helps users improve typing speed and accuracy through timed tests and real-time WPM and accuracy tracking. It features word and paragraph modes, three difficulty levels, guest mode, performance analytics, and a personal dashboard. Built with React, Vite, Supabase Authentication, and PostgreSQL for secure user management and persistent progress tracking.",
+    tech: "React, Supabase",
+    github: "https://github.com/vivekp-codes/TypeX",
+    demo: "https://type-x-2026.vercel.app",
+  },
+  {
     title: "Readify",
     image: "/Images/p2.png",
     description:
@@ -43,7 +52,7 @@ const projects = [
     title: "To Do App",
     image: "/Images/p4.png",
     description:
-      "A modern task management web application built with React to help users organize daily activities efficiently. Users can add, edit, complete, and delete tasks while managing details like headings, descriptions, and due dates. With real time updates and a responsive design, it provides a simple and smooth experience for managing daily tasks.",
+      "A modern task management web application built with React to help users organize their tasks efficiently. Users can add, edit, complete, and delete tasks while managing details like headings, descriptions, and due dates. With a clean interface and a beautiful design, it provides a simple and smooth experience for managing daily tasks.",
     tech: "React",
     github: "https://github.com/vivekp-codes/Todo-App",
     demo: "https://todo-app-codes.vercel.app/",

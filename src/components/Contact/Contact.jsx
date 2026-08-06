@@ -60,17 +60,21 @@ const Contact = () => {
             <img src="/Images/css-new.png" alt="instagram" />
             <img src="/Images/vs.png" alt="youtube" />
             <img src="/Images/chat-gpt.png" alt="discord" />
+            <img src="/Images/Claude-ai.png" alt="discord" />
+
 
             <img src="/Images/linkedin.png" alt="python" />
             <img src="/Images/node-js.png" alt="flutter" />
             <img src="/Images/Postman.png" alt="firebase" />
             <img src="/Images/python.png" alt="html" />
             <img src="/Images/social.png" alt="css" />
+            <img src="/Images/Claude-ai.png" alt="discord" />
             <img src="/Images/whatsapp.png" alt="vscode" />
 
             <img src="/Images/cursor.png" alt="react" />
             <img src="/Images/git.png" alt="node" />
             <img src="/Images/chrome.png" alt="mongo" />
+            <img src="/Images/Claude-ai.png" alt="discord" />
             <img src="/Images/flutter.png" alt="tailwind" />
             <img src="/Images/google.png" alt="git" />
             <img src="/Images/html-new.png" alt="javascript" />
