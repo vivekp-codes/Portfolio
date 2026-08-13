@@ -14,7 +14,7 @@ const projects = [
   },
   {
     title: "TypeX",
-    image: "/Images/TX.png",
+    image: "/Images/p6.png",
     description:
       "A full-stack typing test web application that helps users improve typing speed and accuracy through timed tests and real-time WPM and accuracy tracking. It features word and paragraph modes, three difficulty levels, guest mode, performance analytics, and a personal dashboard. Built with React, Vite, Supabase Authentication, and PostgreSQL for secure user management and persistent progress tracking.",
     tech: "React, Supabase",
