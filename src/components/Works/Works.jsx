@@ -13,6 +13,15 @@ const projects = [
     demo: "https://project-book-my-ticket.vercel.app/",
   },
   {
+    title: "Pixora",
+    image: "/Images/p7.png",
+    description:
+      "A full-stack web application that lets users turn text prompts into AI-generated images. Users can sign in with email, type a prompt, and instantly generate high-quality images — with full gallery management including history, favorites, and notifications. Built with React, Vite, and Express, it features Supabase authentication, Cloudinary image hosting, a credit-based generation limit, profile management, and a responsive design that works seamlessly across desktop and mobile.",
+    tech: "React, Node.js, Express.js, Supabase, Pollinations.ai, Cloudinary",
+    github: "https://github.com/vivekp-codes/Pixora",
+    demo: "https://pixora-ai-ti.vercel.app",
+  },
+  {
     title: "TypeX",
     image: "/Images/p6.png",
     description:
